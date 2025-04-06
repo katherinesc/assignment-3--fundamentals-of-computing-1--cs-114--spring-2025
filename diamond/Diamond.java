@@ -9,5 +9,11 @@ public class Diamond {
     System.out.println("Enter a number: ");
     sizeOfDiamond = scan.nextInt();
 
+    if(sizeOfDiamond % 2 == 0){
+      System.err.println("Number is even");
+    } else{
+      System.out.println("Number is odd");
+    }
+
   }
 }
