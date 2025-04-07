@@ -14,25 +14,25 @@ public class Diamond {
     }
 
     else {
-      System.out.print("Number is odd");
-      for(int creationOfDiamond = 1; creationOfDiamond <= sizeOfDiamond; creationOfDiamond++){
-        for(int spaces = 1; spaces <= sizeOfDiamond - creationOfDiamond; spaces++){
-          System.err.print(" ");
+      System.out.println("Number is odd");
+      for(int creationOfDiamond = 1; creationOfDiamond <= (sizeOfDiamond + 1) / 2; creationOfDiamond++){
+        for(int spaces = 1; spaces <= (sizeOfDiamond + 1) / 2 - creationOfDiamond; spaces++){
+          System.out.print(" ");
         }
 
-        for(int diamondCharacters = 1; diamondCharacters <= creationOfDiamond - 1 * 2 ; diamondCharacters++){
+        for(int diamondCharacters = 1; diamondCharacters <= 2 * creationOfDiamond - 1; diamondCharacters++){
           System.out.print("*");
         }
 
         System.out.println();
       }
 
-      for (int creationOfDiamond = sizeOfDiamond - 1; creationOfDiamond > 0; creationOfDiamond--){
-        for(int spaces = 1; spaces <= sizeOfDiamond - creationOfDiamond; spaces++){
+      for (int creationOfDiamond = (sizeOfDiamond +1 ) / 2 - 1; creationOfDiamond >= 1; creationOfDiamond--){
+        for(int spaces = 1; spaces <= (sizeOfDiamond + 1) / 2 - creationOfDiamond; spaces++){
           System.out.print(" ");
         }
 
-        for(int diamondCharacters = 1; diamondCharacters <= creationOfDiamond - 1 * 2; diamondCharacters++){
+        for(int diamondCharacters = 1; diamondCharacters <= 2 * creationOfDiamond - 1; diamondCharacters++){
           System.out.print("*");
         }
 
