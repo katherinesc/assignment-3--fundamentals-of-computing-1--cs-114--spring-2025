@@ -11,6 +11,10 @@ public class Diamond {
 
     if(sizeOfDiamond % 2 == 0){
       System.err.println("Number is even");
+      for(int spaces = 1; spaces <= sizeOfDiamond; spaces++){
+        System.out.print(" ");
+      }
+      System.out.println("*");
     }
 
     else {
