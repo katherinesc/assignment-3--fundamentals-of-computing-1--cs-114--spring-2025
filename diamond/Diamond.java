@@ -18,7 +18,6 @@ public class Diamond {
       System.out.println("*");
 
       for(int evenDiamond = 1; evenDiamond <= (sizeOfDiamond /2) ; evenDiamond++){
-        for(int spaces = 1; spaces <= (sizeOfDiamond + 1) - (2* evenDiamond) ; spaces++){
         for(int spaces = 1; spaces <= (sizeOfDiamond + 1) - (2 * evenDiamond) ; spaces++){
           System.out.print(" ");
         }
@@ -30,6 +29,21 @@ public class Diamond {
         System.out.println();
       }
 
+      for (int evenDiamond = sizeOfDiamond/2 - 1; evenDiamond >= 1; evenDiamond--){
+        for(int spaces = 1; spaces <= (sizeOfDiamond+ 1) - (2 * evenDiamond); spaces++){
+          System.out.print(" ");
+        }
+
+        for(int diamondCharacters = 1; diamondCharacters <= 2 * evenDiamond ; diamondCharacters++){
+          System.out.print("* ");
+        }
+
+        System.out.println();
+      }
+      for(int spaces = 1; spaces <= sizeOfDiamond; spaces++){
+        System.out.print(" ");
+      }
+      System.out.println("*");
     }
 
     else {
