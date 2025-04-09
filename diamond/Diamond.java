@@ -75,6 +75,6 @@ public class Diamond {
       }
 
     }
-
+    scan.close();
   }
 }
