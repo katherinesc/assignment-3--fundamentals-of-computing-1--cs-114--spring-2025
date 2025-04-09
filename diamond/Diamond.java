@@ -14,7 +14,21 @@ public class Diamond {
       for(int spaces = 1; spaces <= sizeOfDiamond; spaces++){
         System.out.print(" ");
       }
+
       System.out.println("*");
+
+      for(int evenDiamond = 1; evenDiamond <= (sizeOfDiamond /2) ; evenDiamond++){
+        for(int spaces = 1; spaces <= (sizeOfDiamond + 1) - (2* evenDiamond) ; spaces++){
+          System.out.print(" ");
+        }
+
+        for(int diamondCharacters = 1; diamondCharacters <= 2 * evenDiamond ; diamondCharacters++){
+          System.out.print("* ");
+        }
+
+        System.out.println();
+      }
+
     }
 
     else {
