@@ -19,6 +19,7 @@ public class Diamond {
 
       for(int evenDiamond = 1; evenDiamond <= (sizeOfDiamond /2) ; evenDiamond++){
         for(int spaces = 1; spaces <= (sizeOfDiamond + 1) - (2* evenDiamond) ; spaces++){
+        for(int spaces = 1; spaces <= (sizeOfDiamond + 1) - (2 * evenDiamond) ; spaces++){
           System.out.print(" ");
         }
 
