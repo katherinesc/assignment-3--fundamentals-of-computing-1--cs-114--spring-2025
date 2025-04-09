@@ -50,24 +50,24 @@ public class Diamond {
     }
 
     else {
-      for(int creationOfDiamond = 1; creationOfDiamond <= (sizeOfDiamond + 1) / 2; creationOfDiamond++){
-        for(int spaces = 1; spaces <= (sizeOfDiamond + 1) / 2 - creationOfDiamond; spaces++){
+      for(int oddDiamond = 1; oddDiamond <= (sizeOfDiamond + 1) / 2; oddDiamond++){
+        for(int spaces = 1; spaces <= (sizeOfDiamond + 1) / 2 - oddDiamond; spaces++){
           System.out.print(" ");
         }
 
-        for(int diamondCharacters = 1; diamondCharacters <= 2 * creationOfDiamond - 1; diamondCharacters++){
+        for(int diamondCharacters = 1; diamondCharacters <= 2 * oddDiamond - 1; diamondCharacters++){
           System.out.print("*");
         }
 
         System.out.println();
       }
 
-      for (int creationOfDiamond = (sizeOfDiamond +1 ) / 2 - 1; creationOfDiamond >= 1; creationOfDiamond--){
-        for(int spaces = 1; spaces <= (sizeOfDiamond + 1) / 2 - creationOfDiamond; spaces++){
+      for (int oddDiamond = (sizeOfDiamond +1 ) / 2 - 1; oddDiamond >= 1; oddDiamond--){
+        for(int spaces = 1; spaces <= (sizeOfDiamond + 1) / 2 - oddDiamond; spaces++){
           System.out.print(" ");
         }
 
-        for(int diamondCharacters = 1; diamondCharacters <= 2 * creationOfDiamond - 1; diamondCharacters++){
+        for(int diamondCharacters = 1; diamondCharacters <= 2 * oddDiamond - 1; diamondCharacters++){
           System.out.print("*");
         }
 
