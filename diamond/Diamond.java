@@ -9,8 +9,11 @@ public class Diamond {
     System.out.println("Enter a number: ");
     sizeOfDiamond = scan.nextInt();
 
-    if(sizeOfDiamond % 2 == 0){
-      System.err.println("Number is even");
+    if(sizeOfDiamond == 0){
+      System.out.println("A diamond cannot be made with the number 0");
+    }
+
+    else if(sizeOfDiamond % 2 == 0){
       for(int spaces = 1; spaces <= sizeOfDiamond; spaces++){
         System.out.print(" ");
       }
@@ -47,7 +50,6 @@ public class Diamond {
     }
 
     else {
-      System.out.println("Number is odd");
       for(int creationOfDiamond = 1; creationOfDiamond <= (sizeOfDiamond + 1) / 2; creationOfDiamond++){
         for(int spaces = 1; spaces <= (sizeOfDiamond + 1) / 2 - creationOfDiamond; spaces++){
           System.out.print(" ");
