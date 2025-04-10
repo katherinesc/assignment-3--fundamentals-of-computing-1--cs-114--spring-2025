@@ -11,5 +11,10 @@ public class RunMatrix {
     size = scan.nextInt();
 
     Matrix matrix = new Matrix(size);
+
+    System.out.println("Your matrix is: " + size + " x " + size);
+    System.out.println();
+    System.out.println("Here is the matrix with deafult values: ");
+
   }
 }
