@@ -21,6 +21,8 @@ public class RunMatrix {
       for(int column = 0; column < size; column++){
         if(row + column == size - 1){
           System.out.print(HIGHLIGHT + "0\t" + RESET);
+        }else{
+          System.out.print("0\t");
         }
         System.out.print("0\t");
       }
