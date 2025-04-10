@@ -3,6 +3,7 @@ public class Matrix {
 
   public Matrix(int size){
     matrix = new int[size][size];
+  }
   private void swap(int x1, int y1, int x2, int y2){
     int temp = matrix[x1][y1];
     matrix[x1][y1] = matrix[x2][y2];
@@ -14,12 +15,12 @@ public class Matrix {
 
     int matrixLength = matrix.length;
     for(int row = 0; row < matrixLength; row++ ){
-      for(int column = 0; column < row; column++){
+      for(int column = 0; column < matrixLength; column++){
         if(column == matrixLength - 1 - row){
-          System.out.println(HIGHLIGHT + matrix[row][column] + RESET);
+          System.out.print(HIGHLIGHT + matrix[row][column]+ "\t" + RESET);
         }
         else {
-          System.out.println(matrix[row][column]);
+          System.out.print(matrix[row][column] + "\t");
         }
       }
       System.out.println();
