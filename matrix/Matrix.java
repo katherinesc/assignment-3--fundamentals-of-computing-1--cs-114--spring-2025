@@ -23,4 +23,14 @@ public class Matrix {
       System.out.println();
     }
   }
+  public void populateMatrix(){
+    int counter = 1;
+    int matrixLength = matrix.length;
+    for(int row = 0; row < matrixLength; row++){
+      for(int column = 0; column < row; column++){
+        matrix[row][column] = counter++;
+      }
+    }
+  }
+
 }
