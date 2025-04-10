@@ -13,6 +13,7 @@ public class RunMatrix {
 
     if(size <= 0){
       System.out.println("Matrix size cannot be less than nor equal to 0.");
+      scan.close();
       return;
     }
 
