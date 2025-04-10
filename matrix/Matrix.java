@@ -37,17 +37,19 @@ public class Matrix {
   }
   public void flipMatrix(){
     int matrixLength = matrix.length;
+
     for(int row = 0; row < matrixLength; row++){
-      for(int column = 0; column < row; column++){
+      for(int column = matrixLength - 1 - row; column < matrixLength; column++){
         int targetedRow = matrixLength - 1 - column;
         int targetedColumn = matrixLength - 1 - row;
-
-        if((row + column) < matrixLength - 1){
-          swap(row, column, targetedRow, targetedColumn);
+        if(row + column == matrixLength - 1){
+          continue;
         }
+
+        swap(row, column, targetedColumn, targetedRow);
+
       }
     }
   }
-
 
 }
