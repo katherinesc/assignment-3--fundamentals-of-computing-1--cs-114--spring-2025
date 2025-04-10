@@ -45,5 +45,7 @@ public class RunMatrix {
     matrix.flipMatrix();
     System.out.println("Here is the matrix flipped:");
     matrix.printMatrix();
+
+    scan.close();
   }
 }
