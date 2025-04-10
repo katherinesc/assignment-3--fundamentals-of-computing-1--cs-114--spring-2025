@@ -29,5 +29,11 @@ public class RunMatrix {
       System.out.println();
     }
 
+    System.out.println();
+
+    System.out.println("Time to populate the matrix");
+    matrix.populateMatrix();
+    matrix.printMatrix();
+
   }
 }
