@@ -35,9 +35,15 @@ public class RunMatrix {
 
     System.out.println();
 
-    System.out.println("Time to populate the matrix");
     matrix.populateMatrix();
+
+    System.out.println("Time to populate the matrix:");
     matrix.printMatrix();
 
+    System.out.println();
+
+    matrix.flipMatrix();
+    System.out.println("Here is the matrix flipped:");
+    matrix.printMatrix();
   }
 }
