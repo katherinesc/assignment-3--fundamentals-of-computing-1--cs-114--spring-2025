@@ -30,7 +30,7 @@ public class Matrix {
     int counter = 1;
     int matrixLength = matrix.length;
     for(int row = 0; row < matrixLength; row++){
-      for(int column = 0; column < row; column++){
+      for(int column = 0; column < matrixLength; column++){
         matrix[row][column] = counter++;
       }
     }
