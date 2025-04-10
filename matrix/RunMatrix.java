@@ -11,6 +11,11 @@ public class RunMatrix {
     System.out.println("Enter a positive number for the size of your matrix: ");
     size = scan.nextInt();
 
+    if(size <= 0){
+      System.out.println("Matrix size cannot be less than nor equal to 0.");
+      return;
+    }
+
     Matrix matrix = new Matrix(size);
 
     System.out.println("Your matrix is: " + size + " x " + size);
