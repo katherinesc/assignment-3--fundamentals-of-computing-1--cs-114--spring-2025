@@ -24,7 +24,6 @@ public class RunMatrix {
         }else{
           System.out.print("0\t");
         }
-        System.out.print("0\t");
       }
       System.out.println();
     }
